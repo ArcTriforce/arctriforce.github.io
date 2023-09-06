@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+@font-face {
+    font-family: nasin-nanpa;
+    src: url(nasin-nanpa-2.5.1.otf) format("opentype");
+}
+
+body {
+    background-image: url(Media/noisy_net.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    padding: 0;
+    margin: 0;
+    font-family: 'Kaisei Decol', nasin-nanpa, serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.vert{
+    writing-mode: vertical-rl;
+}
+.centerText {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border-width: 0;
+    border-top-width: 2.5px;
+    border-style:dotted;
+    color: #9caca8;
+}
+
+.shorthr {
+    margin: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.noDot {
+    list-style-type: none;
+}
+.noPadLi {
+    padding: 0;
+}
+.padLi {
+    padding-left: 40px;
+}
+
+.zoomL {
+    z-index: 200;
+    position: relative;
+    transition: transform .2s;
+    transform-origin: left;
+}
+.zoomL:hover {
+    transform: scale(1.2);
+    transform-origin: left;
+}
+
+.emojiThing {
+    display: inline;
+    width: auto !important;
+}
+
+.small {
+height: 1.3em;
+}
+
+.medium {
+height: 4em;
+}
+
+.big {
+height: 7em;
+}
+
+.color {
+    width: 1em;
+    height: 1em;
+    background-color: #5c448d;
+    border-radius: 50%;
+}
+
+/* Change the default cursor to a custom image */
+body {
+    cursor: url('https://cdn.discordapp.com/attachments/763856452947279922/1147152707514269876/paw.gif'), auto;
+}
+
+/* Change the cursor for links and buttons to the same custom image */
+a, button {
+    cursor: url('https://cdn.discordapp.com/attachments/763856452947279922/1147152707514269876/paw.gif'), auto;
+}
+
+/*----------------------------------------------------*/
+/*---------------------Header-------------------------*/
+/*----------------------------------------------------*/
+
+#headerStuff {
+    background-image: url(Media/light_noise_diagonal);
+    background-clip: content-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #14191E;
+    width: 800px;
+    height: 184;
+    user-select: none;
+}
+#header img {
+    pointer-events: none;
+}
+
+#headerContent {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+
+#mainHeaderContent h1,
+#mainHeaderContent h5 {
+    margin: 0;
+}
+#mainHeaderContent h1{
+    font-size: 4em;
+}
+#mainHeaderContent h5{
+    font-size: 2em;
+}
+#mainHeaderContent {
+    background-image: url(Media/light_noise_diagonal.png);
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+}
+#leftHeaderContent {
+    height: 150px;
+}
+#leftHeaderContent img {
+    width: 150px;
+    height: 150px;
+
+    border-bottom-right-radius: 15px;
+}
+
+#rightHeaderContent {
+    height: 150px;
+}
+
+#rightHeaderContent img {
+    width: 150px;
+    height: 150px;
+
+    border-bottom-left-radius: 15px;
+}
+
+#headerDropdown {
+    background-image: url(Media/light_noise_diagonal.png);
+    border-radius: 15px 15px 10px 10px;
+    background-color: transparent;
+    padding: 5px;
+    transition: 0.6s;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+#headerDropdown p {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+#headerDropdown a:hover {
+    background-color: #14191E;
+    color: #F3F5F4;
+    opacity: 0.9;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+#headerDropdown a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Style the custom horizontal line */
+.custom-hr {
+    height: 60px; /* Adjust the height as needed */
+    background-image: url('https://cdn.discordapp.com/attachments/923284250151780352/924888630676303883/KITTY_AND_STARS_DIVIDER.gif'); /* Replace with your custom line image path */
+    background-repeat: no-repeat; /* Repeat the image horizontally */
+    background-size: 100% auto; /* Ensure the image covers the entire width */
+}
+
+/*----------------------------------------------------*/
+/*---------------------Content------------------------*/
+/*----------------------------------------------------*/
+
+/*#content {
+    width: 825px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #F3F5F4;
+}
+*/
+
+#content {
+    color: #F3F5F4;
+    height: calc(100vh - 250px);
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 80% auto;
+    transition: 0.6s;
+    grid-row-gap: 20px;
+}
+
+#contentBG {
+    border: 4px double #F3F5F4; 
+    border-radius: 20px; 
+    padding: 20px;
+    overflow:auto;
+    transition: 0.6s;
+    text-align: center;
+}
+
+#contentMain {
+    border: 4px double #F3F5F4; 
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y:scroll;
+    transition: 0.6s;
+}
+
+.contH1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+
+
+/*----------------------------------------------------*/
+/*----------------------People------------------------*/
+/*----------------------------------------------------*/
+
+.peopleTemplate {
+    text-align: center;
+}
+
+.peopleDesc > p {
+    padding: 0 20px;
+}
+
+.peopleTemplate > *:nth-child(-n+2) {
+    display: inline-block;
+}
+
+.peopleDesc {
+    margin: 0 50px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+.peopleDescNO {
+    margin: 0 50px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+.pdL{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.pdR{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.pdL {
+    text-align: right;
+}
+.pdL .peopleImgContainer {
+    left: -20px;
+}
+
+.pdR {
+    text-align: left;
+}
+.pdR .peopleImgContainer {
+    left: 20px;
+}
+
+.peopleImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+}
+
+.peopleImgContainer {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    position: relative;
+    border-width: 2.5px;
+    border-style:dashed;
+    border-radius: 50%;
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.peopleImgContainer:hover {
+    transform: scale(1.7);
+}
+
+/*----------------------------------------------------*/
+/*----------------------DNI bbg-----------------------*/
+/*----------------------------------------------------*/
+
+.dniHeader {
+    text-align: center;
+}
+
+.dniContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.dniContainer > * {
+    margin: 12px;
+}
+
+.leftDni {
+    background-image: url(Media/noisy_net1.png);
+    border-radius: 10%;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+.rightDni {
+    background-image: url(Media/noisy_net1.png);
+    border-radius: 10%;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+.tickmark {
+    margin: 0px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.xmark {
+    text-align: center;
+    margin: 0px;
+    padding-top: 8px;
+}
+
+.infoBanner {
+    margin: 0 50px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.infoBannerKoolaid {
+ margin: 12px;   
+}
+
+.iwcImg {
+    background-image: url(Media/cappuccinovacay.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.iwcImg2 {
+    background-image: url(Media/almondcookieDADDY.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-----------------------------------------------------*/
+/*------------------------info-------------------------*/
+/*-----------------------------------------------------*/
+
+#infographic {
+    text-align: center;
+    display: grid;
+
+    grid-template-rows: auto auto auto;
+    gap:2em ;
+}
+
+.infoCredits {
+    text-align: center;
+    margin: 0 50px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+    display: grid;
+}
+
+.accText {
+    letter-spacing: 0.4em;
+    font-size: 1em;
+    writing-mode: vertical-lr;
+    font-weight: bold;
+}
+
+#accounts {
+    background-color: rgba(11, 85, 99, 0.2);
+    padding: 10px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+    overflow: auto;
+
+    height: 370px;
+}
+
+#accounts > .acc {
+    padding: 2em;
+    display: grid;
+    column-gap: 1em;
+}
+
+.accountImg {
+    width: 300px;
+    height: 300px; 
+    border-radius: 45px;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+.accParagraph {
+    margin: auto;
+}
+
+.leftAcc {
+    grid-template-columns: calc(1em + 32px) auto auto;
+}
+.rightAcc {
+    grid-template-columns: auto auto calc(1em + 32px);
+}
+
+#thanks {
+    position: relative;
+    top: 50px;
+}
+
+/*----------------------------------------------------*/
+/*------------------------Blog------------------------*/
+/*----------------------------------------------------*/
+
+.generalBlog {
+    background-image: url(Media/noisy_net1.png);
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    height: auto;
+    border-radius: 45px;
+    border-width: 2.5px;
+    border-style:dashed;
+    padding: 0 20px;
+}
+
+.generalBlog > * {
+    margin: 12px;
+}
+
+.blogText {
+    text-align: center;
+}
+
+.blogContainer {
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    border-radius: 45px;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+/*------------------Random Blog stuff------------------*/
+
+#memberTags {
+    text-align: left;
+}
+
+.blogBannerfunn {
+    margin: 0 50px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*-----------------------------------------------------*/
+/*------------------------Other------------------------*/
+/*-----------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F3F5F4;
+    border-radius: 100%;
+}
