@@ -512,6 +512,20 @@ a, button {
     width: 100%;
 }
 
+#custom-hr1 {
+    height: 60px; /* Adjust the height as needed */
+    background-image: url('https://cdn.discordapp.com/attachments/763856452947279922/1150446608702525460/85CB2601-2056-4A34-82CD-48F9EF9E359C.png'); /* Replace with your custom line image path */
+    background-repeat: no-repeat; /* Repeat the image horizontally */
+    background-size: 100% auto; /* Ensure the image covers the entire width */
+}
+
+#custom-hr2 {
+    height: 60px; /* Adjust the height as needed */
+    background-image: url('https://cdn.discordapp.com/attachments/763856452947279922/1150502858421174302/6D3DFC45-B618-42DA-BBEE-E4CB38FC1AA1.png'); /* Replace with your custom line image path */
+    background-repeat: no-repeat; /* Repeat the image horizontally */
+    background-size: 100% auto; /* Ensure the image covers the entire width */
+}
+
 /*-----------------------------------------------------*/
 /*------------------------Other------------------------*/
 /*-----------------------------------------------------*/
