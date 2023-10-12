@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const paragraphText = linkParagraph.textContent;
       contentBG.style.overflow = "hidden";
       contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1><br>
-      <a href="https://discord.gg/eTtbzAa6qW" target="_blank">NESystems</a> &#183 <a href="https://dash.pluralkit.me/profile/s/dhhrf?tab=members&view=tiny" target="_blank">System</a>`;
+      <a href="https://discord.gg/eTtbzAa6qW" target="_blank">NESystems</a> &#183 <a href="https://dash.pluralkit.me/profile/s/dhhrf?tab=members&view=tiny" target="_blank">System</a> &#183 <a href="https://twitter.com/ArcTriforce" target="_blank">Twitter</a>`;
       content.style.gridTemplateRows = 'calc(3em + 84px) auto';
       contentMain.style.display = "block";
     }
@@ -110,5 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
       contentMain.style.display = "block";
     }
   });
-  
   });
+
+        // Get a reference to the reload button by its id
+        var reloadButton = document.getElementById("reloadButton");
+
+        // Add a click event listener to the button
+        reloadButton.addEventListener("click", function () {
+            // Reload the webpage
+            location.reload();
+        });
