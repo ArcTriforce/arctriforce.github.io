@@ -1,2 +1,2 @@
-# blog.github.io
+# arctriforce.github.io
 Introduction and blog
