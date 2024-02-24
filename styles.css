@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(Media/checkered.jpg);
+    background-image: url(Media/noisy_net3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -97,12 +97,12 @@ height: 7em;
 
 /* Change the default cursor to a custom image */
 body {
-    cursor: url('https://cdn.discordapp.com/attachments/763856452947279922/1147152707514269876/paw.gif'), auto;
+    cursor: url('media/paw.gif'), auto;
 }
 
 /* Change the cursor for links and buttons to the same custom image */
 a, button {
-    cursor: url('https://cdn.discordapp.com/attachments/763856452947279922/1147152707514269876/paw.gif'), auto;
+    cursor: url('media/paw.gif'), auto;
 }
 
 /*----------------------------------------------------*/
@@ -196,7 +196,7 @@ a, button {
 /* Style the custom horizontal line */
 .custom-hr {
     height: 60px; /* Adjust the height as needed */
-    background-image: url('https://cdn.discordapp.com/attachments/923284250151780352/924888630676303883/KITTY_AND_STARS_DIVIDER.gif'); /* Replace with your custom line image path */
+    background-image: url(Media/KITTY_AND_STARS_DIVIDER.gif); /* Replace with your custom line image path */
     background-repeat: no-repeat; /* Repeat the image horizontally */
     background-size: 100% auto; /* Ensure the image covers the entire width */
 }
@@ -269,15 +269,15 @@ a, button {
 .peopleDesc {
     margin: 0 50px;
     border-radius: 25px;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 2px;
+    border-style:solid;
 }
 
 .peopleDescNO {
     margin: 0 50px;
     border-radius: 25px;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 2px;
+    border-style:solid;
 }
 
 .pdL{
@@ -317,14 +317,14 @@ a, button {
     margin: auto;
     position: relative;
     border-width: 2.5px;
-    border-style:dashed;
+    border-style:double;
     border-radius: 50%;
     transform: scale(1.3);
     transition: .2s;
 }
 
 .peopleImgContainer:hover {
-    transform: scale(1.7);
+    transform: scale(1.5);
 }
 
 /*----------------------------------------------------*/
@@ -347,15 +347,15 @@ a, button {
 .leftDni {
     background-image: url(Media/noisy_net1.png);
     border-radius: 10%;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 2px;
+    border-style:solid;
 }
 
 .rightDni {
     background-image: url(Media/noisy_net1.png);
     border-radius: 10%;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 2px;
+    border-style:solid;
 }
 
 .tickmark {
@@ -373,8 +373,8 @@ a, button {
 .infoBanner {
     margin: 0 50px;
     border-radius: 25px;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 2px;
+    border-style:solid;
     margin: 0 auto;
     width: 100%;
 }
@@ -424,14 +424,14 @@ a, button {
 }
 
 #accounts {
-    background-color: rgba(11, 85, 99, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 25px;
     border-width: 2.5px;
     border-style:dashed;
     overflow: auto;
 
-    height: 370px;
+    height: 38vh;
 }
 
 #accounts > .acc {
@@ -444,8 +444,8 @@ a, button {
     width: 300px;
     height: 300px; 
     border-radius: 45px;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 3px;
+    border-style:double;
 }
 
 .accParagraph {
@@ -475,8 +475,8 @@ a, button {
     width: 500px;
     height: auto;
     border-radius: 45px;
-    border-width: 2.5px;
-    border-style:dashed;
+    border-width: 2px;
+    border-style:solid;
 }
 
 .generalBlog > * {
@@ -493,7 +493,7 @@ a, button {
     width: 250px;
     height: auto;
     border-radius: 45px;
-    border-width: 2.5px;
+    border-width: 2px;
     border-style: dashed;
 }
 
@@ -507,7 +507,7 @@ a, button {
     margin: 0 50px;
     border-radius: 25px;
     border-width: 2.5px;
-    border-style:dashed;
+    border-style:double;
     margin: 0 auto;
     width: 100%;
 }
