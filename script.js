@@ -51,8 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (linkParagraph) {
       const paragraphText = linkParagraph.textContent;
       contentBG.style.overflow = "hidden";
-      contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1>`;
-      content.style.gridTemplateRows = 'calc(2em + 60px) auto';
+      contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1><br>
+      <a href="https://dash.pluralkit.me/profile/g/kxkjp?view=tiny" target="_blank">PluralKit</a>`;
+      content.style.gridTemplateRows = 'calc(3em + 84px) auto';
       contentMain.style.display = "block";
     }
   });
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const paragraphText = linkParagraph.textContent;
       contentBG.style.overflow = "hidden";
       contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1><br>
-      <a href="https://dash.pluralkit.me/profile/g/kxkjp?view=tiny" target="_blank">PluralKit</a> &#183 <a href="#people" target="_blank">Member tags</a>`;
+      <a href="#people" target="_blank">Member tags</a>`;
       content.style.gridTemplateRows = 'calc(3em + 84px) auto';
       contentMain.style.display = "block";
     }
