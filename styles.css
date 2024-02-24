@@ -97,12 +97,12 @@ height: 7em;
 
 /* Change the default cursor to a custom image */
 body {
-    cursor: url('media/paw.gif'), auto;
+    cursor: url('Media/paw.gif'), auto;
 }
 
 /* Change the cursor for links and buttons to the same custom image */
 a, button {
-    cursor: url('media/paw.gif'), auto;
+    cursor: url('Media/paw.gif'), auto;
 }
 
 /*----------------------------------------------------*/
