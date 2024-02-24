@@ -407,15 +407,6 @@ a, button {
     gap:2em ;
 }
 
-.infoCredits {
-    text-align: center;
-    margin: 0 50px;
-    border-radius: 25px;
-    border-width: 2.5px;
-    border-style:dashed;
-    display: grid;
-}
-
 .accText {
     letter-spacing: 0.4em;
     font-size: 1em;
@@ -445,7 +436,7 @@ a, button {
     height: 300px; 
     border-radius: 45px;
     border-width: 3px;
-    border-style:double;
+    border-style:inset;
 }
 
 .accParagraph {
