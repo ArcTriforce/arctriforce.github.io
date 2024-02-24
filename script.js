@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const paragraphText = linkParagraph.textContent;
       contentBG.style.overflow = "hidden";
       contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1><br>
-      <a href="https://discord.gg/eTtbzAa6qW" target="_blank">NESystems</a> &#183 <a href="https://dash.pluralkit.me/profile/s/dhhrf?tab=members&view=tiny" target="_blank">System</a> &#183 <a href="https://twitter.com/ArcTriforce" target="_blank">Twitter</a>`;
+      <a href="https://dash.pluralkit.me/profile/g/kxkjp?view=tiny" target="_blank">PluralKit</a> &#183 <a href="#people" target="_blank">Member tags</a>`;
       content.style.gridTemplateRows = 'calc(3em + 84px) auto';
       contentMain.style.display = "block";
     }
