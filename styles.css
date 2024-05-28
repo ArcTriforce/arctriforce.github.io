@@ -227,6 +227,7 @@ a, button {
 #contentBG {
     border: 4px double #F3F5F4; 
     border-radius: 20px; 
+    padding: 20;
     overflow:auto;
     transition: 0.6s;
     text-align: center;
