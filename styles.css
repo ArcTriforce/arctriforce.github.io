@@ -196,6 +196,7 @@ a, button {
 /* Style the custom horizontal line */
 .custom-hr {
     height: 60px; /* Adjust the height as needed */
+    padding: 20;
     background-image: url(Media/KITTY_AND_STARS_DIVIDER.gif); /* Replace with your custom line image path */
     background-repeat: no-repeat; /* Repeat the image horizontally */
     background-size: 100% auto; /* Ensure the image covers the entire width */
