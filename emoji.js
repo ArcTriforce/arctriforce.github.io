@@ -1,2 +1,0 @@
-document.body.innerHTML = document.body.innerHTML.replace(/:autism:/g, '<img class="emojiThing small" alt="autism" src="https://cdn.discordapp.com/emojis/1126378457568395384.webp?size=44&quality=lossless">');
-document.body.innerHTML = document.body.innerHTML.replace(/:sprintingcatMED:/g, '<img class="emojiThing medium" alt="sprintingcatMED" src="https://cdn.discordapp.com/emojis/1179076607328137236.gif?size=96&quality=lossless">');

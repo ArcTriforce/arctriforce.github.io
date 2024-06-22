@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
-                
-                // Update the URL with the fragment identifier
-                window.location.hash = targetId;
+              window.location.hash = targetId;
             }
         });
     });

@@ -1,123 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Get references to the buttons and other elements
-  const peopleButton = document.getElementById("peopleButton");
-  const homeButton = document.getElementById("homeButton");
-  const dniButton = document.getElementById("dniButton");
-  const blogButton = document.getElementById("blogButton");
-  const infoButton = document.getElementById("infoButton");
+//------------------
+// Content DIVs
+//------------------
+const up = document.getElementById('contentUp');
+const down = document.getElementById('contentDown');
+const upCont = document.getElementById('contentUpContainer');
+const downCont = document.getElementById('contentDownContainer');
+//------------------
+// Buttons
+//------------------
+const btns = document.querySelectorAll('.btn');
+const home = document.getElementById('home');
+const people = document.getElementById('people');
+const dni = document.getElementById('dni');
+const blog = document.getElementById('blog');
+const info = document.getElementById('info');
 
-  const people = document.getElementById("people");
-  const dni = document.getElementById("dni");
-  const blog = document.getElementById("blog");
-  const info = document.getElementById("info");
-  
-  const htmlContent = document.getElementById("htmlContent");
-  const contentBG = document.getElementById("contentBG");
-  const contentMain = document.getElementById("contentMain")
-  const content = document.getElementById("content");
+// Emoji replacement kind of stolen from the original emoji.js
 
+function replaceEmoji(content) {
+  return content.replace(/:autism:/g, '<img class="emojiThing small" alt="autism" src="https://cdn.discordapp.com/emojis/1126378457568395384.webp?size=44&quality=lossless">')
+    .replace(/:sprintingcatMED:/g, '<img class="emojiThing medium" alt="sprintingcatMED" src="https://cdn.discordapp.com/emojis/1179076607328137236.gif?size=96&quality=lossless">');
+}
 
-  
-  // Store the original content of contentBG
-  const originalContentBG = contentBG.innerHTML;
-  const originalhtmlContent = htmlContent.innerHTML;
+// This handles clicking
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    var content = document.getElementById(`${btn.id}Content`);
+    var contentUp = document.querySelector(`#${btn.id}Content .up`).innerHTML;
+    var contentDown = document.querySelector(`#${btn.id}Content .down`).innerHTML;
+    var contentSize = parseInt(content.getAttribute('data-size')) + 30;
+    up.setAttribute('style', `height:${contentSize}px`);
+    console.log(up.offsetHeight)
 
-  // Function to reset to the default state
-  function resetToDefaultState() {
-    content.style.gridTemplateRows = "";
-    htmlContent.innerHTML = originalhtmlContent;
-    htmlContent.innerHTML = originalhtmlContent; // Clear the htmlContent
+    upCont.innerHTML = replaceEmoji(contentUp);
+    downCont.innerHTML = replaceEmoji(contentDown);
 
-    // Restore the original content of contentBG
-    contentBG.innerHTML = originalContentBG;
+    window.location.hash = btn.id;
+
+  })
+});
+
+// This handles loading the page in the right section based on the hash
+document.addEventListener('DOMContentLoaded', () => {
+  var hash = window.location.hash.substring(1)
+
+  if (document.getElementById(hash)) {
+    document.getElementById(hash).click()
+  } else {
+    home.click()
   }
 
-  homeButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    contentBG.style.overflow = "auto";
-    content.style.gridTemplateRows = "auto";
-    contentMain.style.display = "block"; /* Remove second window */
-    resetToDefaultState();
-  });
-
-  peopleButton.addEventListener("click", function (event) {
-    event.preventDefault();
-  
-    const contentToCopy = people.innerHTML;
-  
-    htmlContent.innerHTML = contentToCopy;
-  
-    const linkParagraph = peopleButton.querySelector("a > p");
-    if (linkParagraph) {
-      const paragraphText = linkParagraph.textContent;
-      contentBG.style.overflow = "hidden";
-      contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1><br>
-      <a href="https://dash.pluralkit.me/profile/g/kxkjp?view=tiny" target="_blank">PluralKit</a>`;
-      content.style.gridTemplateRows = 'calc(3em + 84px) auto';
-      contentMain.style.display = "block";
-    }
-  });
-  
-  // Similar code for other buttons
-  dniButton.addEventListener("click", function (event) {
-    event.preventDefault();
-  
-    const contentToCopy = dni.innerHTML;
-  
-    htmlContent.innerHTML = contentToCopy;
-  
-    const linkParagraph = dniButton.querySelector("a > p");
-    if (linkParagraph) {
-      const paragraphText = linkParagraph.textContent;
-      contentBG.style.overflow = "hidden";
-      contentBG.innerHTML = `<h1 class="contH1">DNI - IWC - BYI</h1>`;
-      content.style.gridTemplateRows = 'calc(2em + 60px) auto';
-      contentMain.style.display = "block";
-    }
-  });
-  
-  //BLOG PART
-  blogButton.addEventListener("click", function (event) {
-    event.preventDefault();
-  
-    const contentToCopy = blog.innerHTML;
-  
-    htmlContent.innerHTML = contentToCopy;
-  
-    const linkParagraph = blogButton.querySelector("a > p");
-    if (linkParagraph) {
-      const paragraphText = linkParagraph.textContent;
-      contentBG.style.overflow = "hidden";
-      contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1><br>
-      <a href="#people" target="_blank">Member tags</a>`;
-      content.style.gridTemplateRows = 'calc(3em + 84px) auto';
-      contentMain.style.display = "block";
-    }
-  });
-  
-  infoButton.addEventListener("click", function (event) {
-    event.preventDefault();
-  
-    const contentToCopy = info.innerHTML;
-  
-    htmlContent.innerHTML = contentToCopy;
-  
-    const linkParagraph = infoButton.querySelector("a > p");
-    if (linkParagraph) {
-      const paragraphText = linkParagraph.textContent;
-      contentBG.style.overflow = "hidden";
-      contentBG.innerHTML = `<h1 class="contH1">${paragraphText}</h1>`;
-      content.style.gridTemplateRows = 'calc(2em + 60px) auto';
-      contentMain.style.display = "block";
-    }
-  });
-  });
-
-        // Get a reference to the reload button by its id
-        var reloadButton = document.getElementById("reloadButton");
-
-        // Add a click event listener to the button
-        reloadButton.addEventListener("click", function () {
-            // Reload the webpage
-            location.reload();
-        });
+})
