@@ -18,7 +18,8 @@ const info = document.getElementById('info');
 // Emoji replacement kind of stolen from the original emoji.js
 
 function replaceEmoji(content) {
-  return content.replace(/:autism:/g, '<img class="emojiThing small" alt="autism" src="https://cdn.discordapp.com/emojis/1126378457568395384.webp?size=44&quality=lossless">')
+  return content
+             .replace(/:autism:/g, '<img class="emojiThing small" alt="autism" src="https://cdn.discordapp.com/emojis/1126378457568395384.webp?size=44&quality=lossless">')
     .replace(/:sprintingcatMED:/g, '<img class="emojiThing medium" alt="sprintingcatMED" src="https://cdn.discordapp.com/emojis/1179076607328137236.gif?size=96&quality=lossless">');
 }
 

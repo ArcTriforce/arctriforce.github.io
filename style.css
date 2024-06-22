@@ -16,6 +16,10 @@ body {
   cursor: url('Media/paw.gif'), auto !important;
 }
 
+.cntr {
+  text-align: center;
+}
+
 #container {
   width: 100%;
   max-width: 800px;
@@ -91,12 +95,17 @@ h6 {
   overflow: hidden;
 }
 
+#contentUp {
+  text-align: center;
+}
+
 #contentUp::-webkit-scrollbar {
   width: 0 !important;
 }
 
 #contentDown {
   height: 100%;
+  padding: 10px;
 }
 
 #contents {
