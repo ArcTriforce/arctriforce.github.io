@@ -100,6 +100,12 @@ h6 {
 
 #contentUp {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
 }
 
 #contentUp::-webkit-scrollbar {
@@ -431,7 +437,8 @@ margin: 12px;
   background-image: url(Media/noisy_net1.png);
   margin: 30px auto;
   text-align: center;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 45px;
   border-width: 2px;
@@ -504,4 +511,11 @@ margin: 12px;
 ::-webkit-scrollbar-thumb {
   background: #F3F5F4;
   border-radius: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 70%;
+  }
 }
